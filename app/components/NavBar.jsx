@@ -23,7 +23,7 @@ const NavLinks = [
 const NavBar = () => {
   const [navbarOpen, setNavBarOpen] = useState(false);  
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95 font-sans'>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-85e font-sans'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-5 py-3'>
             <Link href={"/"} className="text-3xl md:text-5xl text-white font-semibold">
                 LOGO
@@ -53,6 +53,7 @@ const NavBar = () => {
                 </ul>
             </div>
         </div>
+        <div className="py-1 bg-gradient-to-l from-orange-400 to-orange-800"></div>
         {navbarOpen ? <MenuOverlay links={NavLinks} /> : null}
     </nav>
   )
