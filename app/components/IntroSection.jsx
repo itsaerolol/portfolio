@@ -8,8 +8,8 @@ const IntroSection = () => {
   return (
     <section className='z-10'>
         <div className="grid grid-cols-1 sm:grid-cols-12">
-            <div className="col-span-7 place-self-cente sm:text-left">
-                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:mt-16 md:mt-8 font-extrabold">
+            <div className="col-span-7 place-self-center sm:text-left">
+                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:mt-4 md:mt-8 font-extrabold">
                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-orange-800 font-sans">
                       A Look into {" "}
                     </span>
@@ -35,7 +35,7 @@ const IntroSection = () => {
 
                 </h1>
                 <p className="text-[#ADB7BE] text-base mb-6 sm:text-lg lg:text-xl">
-                    Veer into my perspective of this digital artform.
+                    Veer into my perspective of a digital artform.
                 </p>
                 <div>
                 <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 to-orange-800 hover:bg-slate-200 text-white'>
@@ -48,8 +48,8 @@ const IntroSection = () => {
                 </button>
                 </div>
             </div>
-            <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-                <div className="sm:ml-28 lg:mr-12 rounded-full bg-[#282828] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
+            <div className="col-span-5 md:col-span-4 place-self-center mt-4 lg:mt-0">
+                <div className="lg:mr-12 rounded-full bg-[#282828] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
                   <Image
                     src="/img/camera.png"
                     alt="self image"
