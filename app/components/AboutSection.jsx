@@ -3,6 +3,43 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+const TAB_DATA = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul>
+        <li>HTML / CSS</li>
+        <li>Node.js</li>
+        <li>NextJS</li>
+        <li>React</li>
+        <li>MongoDB</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul>
+        <li>Methodist University, Bachelors in App Development</li>
+        <li>Multiple Codecademy Certifications</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <ul>
+        <li>Globally Accessible Home Server</li>
+        <li>Web Portfolio using React / NextJS</li>
+        <li>Private P2P Messaging app</li>
+      </ul>
+    ),
+  },
+];
+
 const AboutSection = () => {
   const [tab, setTab] = useState("Skills");
   const [isPending, startTransition] = useTransition();
@@ -24,7 +61,7 @@ const AboutSection = () => {
           height={500}
         />
         <div>
-          <h2 className="text-4xl font-bold text-white mb-4 font-sans ">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
             voluptatum, optio saepe minus facilis sapiente beatae, mollitia
@@ -53,9 +90,10 @@ const AboutSection = () => {
               {" "}
               Experience{" "}
             </TabButton>
-
-            
           </div>
+          <div className="mt-8">
+              {TAB_DATA.find((i) => (i.id === tab)).content}
+            </div>
         </div>
       </div>
     </section>
