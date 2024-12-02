@@ -9,15 +9,15 @@ import Image from "next/image";
 const NavLinks = [
   {
     title: "About",
-    path: "#about",
+    path: "/about",
   },
   {
     title: "Projects",
-    path: "#projects",
+    path: "/projects",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "/contact",
   },
 ];
 
@@ -30,14 +30,27 @@ const NavBar = () => {
           href={"/"}
           className="text-3xl md:text-5xl text-white font-semibold"
         >
-          <Image
+          <div class="relative group cursor-pointer">
+            <div
+                class="absolute -inset-1 bg-gradient-to-r from-red-600 to-orange-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200">
+            </div>
+            <div
+                >
+                <div class="space-y-1">
+                <Image
             src="/img/IMG_7632.jpeg"
             alt="self image"
             className="relative transform rounded-full"
             width={50}
             height={50}
           />
+                </div>
+            </div>
+        </div>
         </Link>
+
+      
+
         <div className=" mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button

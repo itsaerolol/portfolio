@@ -33,19 +33,25 @@ const IntroSection = () => {
             </div>
           </h1>
           <p className="text-[#ADB7BE] text-base mb-6 sm:text-lg lg:text-xl">
-            Veer into my perspective of a digital artform.
+            Experience my perspective of a digital artform.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 to-orange-800 hover:bg-slate-200 text-white">
-              Recent Projects
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 to-orange-800 text-white">
+              <a href="/projects" className="hover:text-black">
+                Projects
+              </a>
             </button>
             <button
+              href="/path"
               id="contact-button"
               className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-orange-500 to-orange-800 hover:bg-slate-800 text-white mt-3"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <a
+                href="/path"
+                className="block bg-[#121212] hover:bg-white hover:text-black rounded-full px-5 py-2"
+              >
                 Career Path
-              </span>
+              </a>
             </button>
           </div>
         </div>

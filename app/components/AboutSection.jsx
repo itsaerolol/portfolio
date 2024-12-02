@@ -9,9 +9,15 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul>
-        <li>HTML / CSS</li>
-        <li>NextJS / ReactJS</li>
-        <li>MongoDB</li>
+        <li className="font-sans pl-2 border-l-2 border-dashed border-orange-500">
+          Urban Photography
+        </li>
+        <li className="font-sans pl-2 border-l-2 border-orange-500">
+          Videography / Short Films
+        </li>
+        <li className="font-sans pl-2 border-l-2 border-orange-500">
+          Professional Editing
+        </li>
       </ul>
     ),
   },
@@ -20,8 +26,12 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul>
-        <li>Methodist University, Bachelors in App Development</li>
-        <li>Multiple Codecademy Certifications</li>
+        <li className="font-sans pl-2 border-l-2 border-dashed border-orange-500">
+          Methodist University
+        </li>
+        <li className="font-sans pl-2 border-l-2 border-orange-500">
+          Bachelors in Multimedia Development
+        </li>
       </ul>
     ),
   },
@@ -30,16 +40,22 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul>
-        <li>Globally Accessible Home Server</li>
-        <li>Web Portfolio using React / NextJS</li>
-        <li>Private P2P Messaging app</li>
+        <li className="font-sans pl-2 border-l-2 border-dashed border-orange-500">
+          Methodist Univeristy Campus Photos
+        </li>
+        <li className="font-sans pl-2 border-l-2 border-orange-500">
+          Short Films
+        </li>
+        <li className="font-sans pl-2 border-l-2 border-orange-500">
+          Multiple Social Medias
+        </li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -47,7 +63,6 @@ const [tab, setTab] = useState("skills");
       setTab(id);
     });
   };
-
 
   return (
     <section className="text-white">
@@ -60,15 +75,20 @@ const [tab, setTab] = useState("skills");
           height={500}
         />
         <div>
-          <h2 className="text-4xl font-bold text-white mt-12 mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mt-12 pb-1 mb-5 border-b-4 border-orange-500">
+            About Me
+          </h2>
           <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptatum, optio saepe minus facilis sapiente beatae, mollitia
-            alias consequatur nihil sint eum facere error, excepturi laudantium
-            autem dicta vitae voluptatibus.
+            What's up! I'm currently a student at Methodist University located
+            in my hometown: Fayetteville, NC. At 19 years old, I spent the last
+            4 years of my life practicing my favorite hobby. Capturing stills
+            and motion pictures is my favorite way to express myself to the
+            world. Growing up, I had an uncle who was a photographer. He gave my
+            sister his oldest camera, and after experiencing the ability to
+            frame my own lifestyle and upload it to the world, it was history
+            from there.
           </p>
           <div className="flex flex-row mt-8">
-
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -92,8 +112,8 @@ const [tab, setTab] = useState("skills");
             </TabButton>
           </div>
           <div className="mt-8">
-              {TAB_DATA.find((i) => (i.id === tab)).content}
-            </div>
+            {TAB_DATA.find((i) => i.id === tab).content}
+          </div>
         </div>
       </div>
     </section>
