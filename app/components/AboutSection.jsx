@@ -79,7 +79,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-base lg:text-lg">
-            What's up! I'm currently a student at Methodist University located
+            What&apos;s up! I&apos;m currently a student at Methodist University located
             in my hometown: Fayetteville, NC. At 19 years old, I spent the last
             4 years of my life practicing my favorite hobby. Capturing stills
             and motion pictures is my favorite way to express myself to the

@@ -21,9 +21,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 // MAKE FONT SANS
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
+      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4 font-sans">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+        <p className="text-[#ADB7BE] font-mono">{description}</p>
       </div>
     </div>
   );
