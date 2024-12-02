@@ -2,11 +2,17 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const IntroSection = () => {
   return (
     <section className="z-10">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="grid grid-cols-1 sm:grid-cols-12"
+      >
         <div className="col-span-7 place-self-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:mt-4 md:mt-8 font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-orange-800 font-sans">
@@ -37,20 +43,20 @@ const IntroSection = () => {
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 to-orange-800 text-white">
-              <a href="/projects" className="hover:text-black">
+              <a href="/topics/projects" className="hover:text-black">
                 Projects
               </a>
             </button>
             <button
-              href="/path"
+             
               id="contact-button"
               className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-orange-500 to-orange-800 hover:bg-slate-800 text-white mt-3"
             >
               <a
-                href="/path"
+                href="/topics/contact"
                 className="block bg-[#121212] hover:bg-white hover:text-black rounded-full px-5 py-2"
               >
-                Career Path
+                Contact Me
               </a>
             </button>
           </div>
@@ -66,7 +72,7 @@ const IntroSection = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

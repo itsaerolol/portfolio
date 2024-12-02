@@ -8,7 +8,7 @@ import AchievementsSection from "./components/AchievementsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-mainbg">
+    <main className="flex min-h-screen flex-col bg-mainbg font-sans">
       <NavBar />
       <div className="container mt-24 mx-auto m-2">
         <IntroSection />
