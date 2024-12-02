@@ -10,9 +10,7 @@ const TAB_DATA = [
     content: (
       <ul>
         <li>HTML / CSS</li>
-        <li>Node.js</li>
-        <li>NextJS</li>
-        <li>React</li>
+        <li>NextJS / ReactJS</li>
         <li>MongoDB</li>
       </ul>
     ),
@@ -62,7 +60,7 @@ const [tab, setTab] = useState("skills");
           height={500}
         />
         <div>
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mt-12 mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
             voluptatum, optio saepe minus facilis sapiente beatae, mollitia
