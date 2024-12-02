@@ -30,13 +30,13 @@ const NavBar = () => {
           href={"/"}
           className="text-3xl md:text-5xl text-white font-semibold"
         >
-          <div class="relative group cursor-pointer">
+          <div className="relative group cursor-pointer">
             <div
-                class="absolute -inset-1 bg-gradient-to-r from-red-600 to-orange-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200">
+                className="absolute -inset-1 bg-gradient-to-r from-red-600 to-orange-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200">
             </div>
             <div
                 >
-                <div class="space-y-1">
+                <div className="space-y-1">
                 <Image
             src="/img/IMG_7632.jpeg"
             alt="self image"

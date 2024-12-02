@@ -7,56 +7,56 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/img/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Campus Photograhy",
+    description: "Take a look at MU's beautiful scenery",
+    image: "/img/projects/image1.jpeg",
+    tag: ["All", "Photography"],
+    gitUrl: "https://www.instagram.com/p/DA1FjWCx7Ms",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/img/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Clutch Coffee Photography Collage",
+    description: "Grand opening of Clutch Coffee!",
+    image: "/img/projects/image2.jpeg",
+    tag: ["All", "Photography"],
+    gitUrl: "#projects",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/img/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Cup o' Lemonade",
+    description: "Testing new camera angles with a short film",
+    image: "/img/projects/image3.jpeg",
+    tag: ["All", "Film"],
+    gitUrl: "https://streamable.com/gy61sm",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/img/projects/4.png",
-    tag: ["All", "Mobile"],
+    title: "Canon Collage",
+    description: "A collage of shots on my new Camera",
+    image: "/img/projects/image4.jpeg",
+    tag: ["All", "Photography"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/img/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Room Makeover",
+    description: "Appreciate the hard-earned setup makeover!",
+    image: "/img/projects/image5.jpeg",
+    tag: ["All", "Film"],
+    gitUrl: "https://www.youtube.com/shorts/51VpR52EVnI",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/img/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Pick a shot",
+    description: "Film Motivational Short",
+    image: "/img/projects/image6.jpeg",
+    tag: ["All", "Film"],
+    gitUrl: "https://www.tiktok.com/@its.aero/video/7252471984272100654",
     previewUrl: "/",
   },
 ];
@@ -92,13 +92,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Film"
+          isSelected={tag === "Film"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Photography"
+          isSelected={tag === "Photography"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
