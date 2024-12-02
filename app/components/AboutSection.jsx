@@ -41,7 +41,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("Skills");
+const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -49,6 +49,7 @@ const AboutSection = () => {
       setTab(id);
     });
   };
+
 
   return (
     <section className="text-white">
@@ -69,6 +70,7 @@ const AboutSection = () => {
             autem dicta vitae voluptatibus.
           </p>
           <div className="flex flex-row mt-8">
+
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
