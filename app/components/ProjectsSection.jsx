@@ -38,7 +38,7 @@ const projectsData = [
     description: "A collage of shots on my new Camera",
     image: "/img/projects/image4.jpeg",
     tag: ["All", "Photography"],
-    gitUrl: "/",
+    gitUrl: "#projects",
     previewUrl: "/",
   },
   {
@@ -53,7 +53,7 @@ const projectsData = [
   {
     id: 6,
     title: "Pick a shot",
-    description: "Film Motivational Short",
+    description: "Filmmaking Motivational Short",
     image: "/img/projects/image6.jpeg",
     tag: ["All", "Film"],
     gitUrl: "https://www.tiktok.com/@its.aero/video/7252471984272100654",

@@ -66,26 +66,28 @@ const AboutSection = () => {
 
   return (
     <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="mx-autop md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
-          className="rounded-3xl"
+          className="mx-auto rounded-3xl"
           src="/img/1819_square.jpg"
           alt="self-image"
           width={500}
           height={500}
         />
         <div>
-          <h2 className="text-4xl font-bold text-white mt-12 pb-1 mb-5 border-b-4 border-orange-500">
-            About Me
-          </h2>
-          <p className="text-base lg:text-lg">
-            What&apos;s up! I&apos;m currently a student at Methodist University located
-            in my hometown: Fayetteville, NC. At 19 years old, I spent the last
-            4 years of my life practicing my favorite hobby. Capturing stills
-            and motion pictures is my favorite way to express myself to the
-            world. Growing up, I had an uncle who was a photographer. He gave my
-            sister his oldest camera, and after experiencing the ability to
-            frame my own lifestyle and upload it to the world, it was history
+          <div className="text-center text-4xl font-bold text-white mt-12  mb-5 ">
+            <h2 className="w-44 pb-1 mx-auto md:mx-0 border-b-4 border-orange-500">
+              About Me
+            </h2>
+          </div>
+          <p className="text-center md:text-left text-base lg:text-lg">
+            What&apos;s up! I&apos;m currently a student at Methodist University
+            located in my hometown: Fayetteville, NC. At 19 years old, I spent
+            the last 4 years of my life practicing my favorite hobby. Capturing
+            stills and motion pictures is my favorite way to express myself to
+            the world. Growing up, I had an uncle who was a photographer. He
+            gave my sister his oldest camera, and after experiencing the ability
+            to frame my own lifestyle and upload it to the world, it was history
             from there.
           </p>
           <div className="flex flex-row mt-8">
