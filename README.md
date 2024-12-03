@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a Photography Themed Web Portfolio made by Keaton White
+### Finished and Suubmitted Dec 2, 2024
+
 
 ## Getting Started
 
